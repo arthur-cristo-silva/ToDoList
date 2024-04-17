@@ -8,6 +8,7 @@
 
 ## API Endpoints
 - Create
+Criará a "Todo1" e à armazenará no banco de dados.
 ```
 $ POST localhost:8080/todos
 {
@@ -16,14 +17,14 @@ $ POST localhost:8080/todos
 	"realizado": false,
 	"prioridade": 1
 }
-Criará a "Todo1" e à armazenará no banco de dados.
 ```
 - Read
+Retornará a lista de tarefas em ordem de prioridade.
 ```
 $ GET localhost:8080/todos
-Retornará a lista de tarefas.
 ```
 - Update
+Irá atualizar a Todo1.
 ```
 $ PUT localhost:8080/todos
 {
@@ -32,10 +33,9 @@ $ PUT localhost:8080/todos
 	"realizado": true,
 	"prioridade": 0
 }
-Irá atualizar a Todo1.
 ```
 - Delete
+Irá remover a tarefa de ID 1.
 ```
 $ POST localhost:8080/1
-Irá remover a tarefa de ID 1.
 ```
