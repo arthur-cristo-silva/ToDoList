@@ -1,17 +1,16 @@
-<h1 align="center">
-  TO DO List
-</h1>
+# Lista de Tarefas
+Este projeto é uma simples aplicação de lista de tarefas.
 
-## Tecnologias
-- Java Spring
-- MySQL
+## Tecnologias Utilizadas
+- **Java Spring**: Utilizado para criar o backend da aplicação.
+- **MySQL**: Utilizado como banco de dados para armazenar as tarefas.
 
-## API Endpoints
-- Create
-
-Criará a "Todo1" e à armazenará no banco de dados.
-```
-$ POST localhost:8080/todos
+## Endpoints da API 
+ 
+### Criar
+Este endpoint criará uma nova tarefa chamada "Todo1" e a armazenará no banco de dados.
+```bash
+POST localhost:8080/todos
 {
 	"name": "Todo1",
 	"descricao": "Desc da Todo1",
@@ -19,16 +18,14 @@ $ POST localhost:8080/todos
 	"prioridade": 1
 }
 ```
-- Read
-
-Retornará a lista de tarefas em ordem de prioridade.
-```
+## Ler 
+Este endpoint retornará a lista de tarefas em ordem de prioridade.
+```bash
 $ GET localhost:8080/todos
 ```
-- Update
-
-Irá atualizar a Todo1.
-```
+## Atualizar 
+Este endpoint atualizará a tarefa chamada “Todo1”.
+```bash
 $ PUT localhost:8080/todos
 {
 	"name": "Todo1",
@@ -37,9 +34,8 @@ $ PUT localhost:8080/todos
 	"prioridade": 0
 }
 ```
-- Delete
-
-Irá remover a tarefa de ID 1.
-```
+## Delete
+Este endpoint removerá a tarefa com ID 1.
+```bash
 $ POST localhost:8080/1
 ```
