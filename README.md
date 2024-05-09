@@ -1,5 +1,5 @@
 # Lista de Tarefas
-Este projeto é uma simples aplicação de lista de tarefas.
+Uma API que gerencia lista de tarefas.
 
 ## Tecnologias Utilizadas
 - **Java Spring**: Utilizado para criar o backend da aplicação.
@@ -37,5 +37,5 @@ $ PUT localhost:8080/todos
 ## Delete
 Este endpoint removerá a tarefa com ID 1.
 ```bash
-$ POST localhost:8080/1
+$ DELETE localhost:8080/todos/1
 ```
